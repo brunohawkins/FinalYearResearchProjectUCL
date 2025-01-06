@@ -1,0 +1,22 @@
+<robot name="ground_plane">
+  <!-- A flat plane link -->
+  <link name="ground">
+    <visual>
+      <geometry>
+        <box size="10 10 0.01"/> <!-- Large flat rectangle -->
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="10 10 0.01"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0"/> <!-- Static object -->
+      <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
+    </inertial>
+  </link>
+</robot>

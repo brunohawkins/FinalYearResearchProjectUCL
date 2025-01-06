@@ -1,0 +1,16 @@
+<mujoco model="cup_test">
+    <compiler angle="radian" />
+    <option timestep="0.01" gravity="0 0 -9.81" />
+
+    <asset>
+        <mesh name="test_cup" file="/Users/brunohawkins/PycharmProjects/FinalYearResearchProjectUCL/Project_files/robotics_stuff/test_cup.obj" />
+        <material name="plastic" rgba="0.8 0.8 0.8 1" />
+    </asset>
+
+    <worldbody>
+        <body name="cup" pos="0 0 0.1">
+            <geom type="mesh" mesh="test_cup" mass="0.24" material="plastic" />
+        </body>
+        <camera name="cup_camera" pos="0 150 750" xyaxes="1 0 0 0 1 0" />
+    </worldbody>
+</mujoco>
